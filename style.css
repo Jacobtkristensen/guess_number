@@ -9,3 +9,7 @@ h1 {
     text-align: center;
 
 }
+#resetButton {
+    display: none;
+    margin: 0 auto;
+}

@@ -10,10 +10,10 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-        <link rel="stylesheet" href="style.css"/>
-        <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
 
-    </head>
+</head>
 
 <body>
     <header>
@@ -26,20 +26,18 @@
             <h4>Welcome to my number guessing game!</h4>
             <p>Guess a number between 1 and 100</p>
 
-            <ul>
-                <li>You guessed 69 - that was too high! Try again</li>
-                <li>You guessed 45 - that was too high! Try again</li>
-                <li>You guessed 12 - that was too low! Try again</li>
-                <li>You guessed 29 - that was too low! Try again</li>
-            </ul>
-            
+            <ul class="guesslist"></ul>
+
             <form action="">
                 <label for="guess">Enter your guess:</label>
-                <input type="text" id="guess" name="guess" />
+                <input type="number" id="guess" name="guess" />
                 <input type="submit" value="Submit" />
             </form>
-            
-            </main>
+            <button id="resetButton" type="button" class="btn btn-danger">
+                Play again?
+            </button>
+
+    </main>
     <footer>
         <!-- place footer here -->
     </footer>
