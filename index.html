@@ -28,7 +28,7 @@
             <p>Guess a number between 1 and 100</p>
 
             <ul class="guesslist"></ul>
-
+<!-- 
             <form action="">
                 <label for="guess">Enter your guess:</label>
                 <input type="number" id="guess" name="guess" />
@@ -36,8 +36,20 @@
             </form>
             <button id="resetButton" type="button" class="btn btn-danger">
                 Play again?
+            </button> -->
+            <form action="" id="guessForm" class="row g-3">
+                <div class="col-2">
+                    <label for="guess" class="visually-hidden">Enter your guess:</label>
+                    <input type="number" id="guess" name="guess" class="form-control" placeholder="Enter your guess" />
+                </div>
+                <div class="col-6">
+                    <button type="submit" class="btn btn-primary mb-3">Submit</button>
+                </div>
+            </form>
+        
+            <button id="resetButton" type="button" class="btn btn-danger">
+                Play again?
             </button>
-
     </main>
     <footer>
         <!-- place footer here -->

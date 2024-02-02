@@ -10,6 +10,8 @@ function start() {
 generatedNumber = generateRandomNumber();
 document.querySelector("form").addEventListener("submit", receiveUserInput);
 document.querySelector("#resetButton").addEventListener("click", resetGame);
+document.querySelector("#resetButton").style.display = "none";
+
 }
 function generateRandomNumber() {
     return Math.floor(Math.random() * 100) + 1;
@@ -54,9 +56,20 @@ function guessIsTooLow(guess) {
     const html = `<li>You guessed ${guess} - that was too low! Try again</li>`;
     list.insertAdjacentHTML("beforeend", html);
 }
+// function resetGame() {
+//     document.querySelector("form").style.display = "block";    
+//     document.querySelector(".guesslist").innerHTML = "";
+//     document.querySelector("#resetButton").style.display = "none";
+//     generatedNumber = generateRandomNumber();
+// }
 function resetGame() {
-    document.querySelector("form").style.display = "block";    
+
+    const inputField = document.querySelector("#guess")
+    inputField.value = "";
+
     document.querySelector(".guesslist").innerHTML = "";
     document.querySelector("#resetButton").style.display = "none";
+    document.querySelector("form").style.display = "block";
     generatedNumber = generateRandomNumber();
+    document.querySelector("form").classList.add("row g-3")
 }

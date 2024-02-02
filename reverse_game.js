@@ -59,5 +59,5 @@ function resetGame() {
     document.querySelector("#startButton").style.display = "block";
     document.querySelector("#player-action").style.display = "none";
     document.querySelector("#resetButton").style.display = "none";
-    guessList.textContent = "";
+    guessList.innerHTML = "";
 }
