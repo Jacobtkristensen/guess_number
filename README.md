@@ -1,6 +1,6 @@
 # Number guessing game. 
-Index is user = Guesser.
-Reverse is user = Thinker.
+### Index is user = Guesser.
+### Reverse is user = Thinker.
 
 Use the button in top left corner to change between games.
 
