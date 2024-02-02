@@ -71,5 +71,4 @@ function resetGame() {
     document.querySelector("#resetButton").style.display = "none";
     document.querySelector("form").style.display = "block";
     generatedNumber = generateRandomNumber();
-    document.querySelector("form").classList.add("row g-3")
 }
