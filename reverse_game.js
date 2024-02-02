@@ -32,7 +32,7 @@ function makeInitialGuess() {
 }
 
 function updateGuessList(message) {
-    guessList.textContent = message;
+    guessList.innerHTML = message;
 }
 
 function guessIsCorrect() {
