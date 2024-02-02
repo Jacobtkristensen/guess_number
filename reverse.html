@@ -19,20 +19,23 @@
         <!-- place navbar here -->
     </header>
     <main>
-
         <body>
-            <a href="/reverse.html" class="btn btn-success">Reverse game</a>
-
-            <h1>Guess a number!</h1>
+            <a href="./" class="btn btn-primary">Back to Home</a>
+            <h1>I want to guess a number!</h1>
             <h4>Welcome to my number guessing game!</h4>
-            <p>Guess a number between 1 and 100</p>
+            <p>Think of a number between 1 and 100, and I will try to guess it!</p>
+            <p>Try to remember your number, M'kay?</p>
+            <img id="mkay" class="" src="https://media.tenor.com/zWE1H9i-CskAAAAM/mkay-mr-mackey.gif" alt="Mr. Mackey from South Park saying 'M'kay?'">
 
             <ul class="guesslist"></ul>
 
-            <form action="">
-                <label for="guess">Enter your guess:</label>
-                <input type="number" id="guess" name="guess" />
-                <input type="submit" value="Submit" />
+            <button id="startButton" type="button" class="btn btn-success">Start guessing!</button>
+                
+            <form action="" id="player-action">
+                
+                <button id="too-low-btn" type="button" class="btn btn-warning">Too Low</button>
+                <button id="correct-btn" type="button" class="btn btn-warning">Correct!</button>
+                <button id="too-high-btn" type="button" class="btn btn-warning">Too High</button>
             </form>
             <button id="resetButton" type="button" class="btn btn-danger">
                 Play again?
@@ -42,8 +45,8 @@
     <footer>
         <!-- place footer here -->
     </footer>
-    <script src="script.js"></script>
     <!-- Bootstrap JavaScript Libraries -->
+    <script src="reverse_game.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>

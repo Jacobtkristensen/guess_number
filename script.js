@@ -58,4 +58,5 @@ function resetGame() {
     document.querySelector("form").style.display = "block";    
     document.querySelector(".guesslist").innerHTML = "";
     document.querySelector("#resetButton").style.display = "none";
+    generatedNumber = generateRandomNumber();
 }

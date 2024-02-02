@@ -9,7 +9,14 @@ h1 {
     text-align: center;
 
 }
-#resetButton {
-    display: none;
-    margin: 0 auto;
+
+#startButton {
+    margin-left: 10%;
+}
+#mkay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 20vh;
 }
